@@ -8,6 +8,7 @@
 
 .badge_header {
   padding: 0.5rem 0;
+  border-radius: 5px;
   height: 80px;
   background: #1b1b25;
   display: flex;
