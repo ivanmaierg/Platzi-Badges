@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // Import JS libs
-import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 import BadgeNew from './pages/BadgeNew';
 
 ReactDOM.render(<BadgeNew />, document.getElementById('root'));
