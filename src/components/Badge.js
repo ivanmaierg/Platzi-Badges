@@ -17,12 +17,12 @@ class Badge extends React.Component {
             alt="Avatar"
           />
           <h1 className="text-dark">
-            Ivan <br /> Maier
+            {this.props.firstName} <br /> {this.props.lastName}
           </h1>
         </div>
         <div className="badge_section-info">
-          <h3 className="text-dark">Web dev</h3>
-          <div className="text-dark">@imaierg</div>
+          <h3 className="text-dark">{this.props.jobTitle}</h3>
+          <div className="text-dark">@{this.props.twitter}</div>
         </div>
         <div className="badge_footer">#platziconf</div>
       </div>
