@@ -11,6 +11,10 @@ body {
     background-color: #f4f4f7;
 }
 
+p{
+    margin:0 !important;
+    padding: 0 !important;
+}
 
 a:hover span {
     text-decoration: underline;

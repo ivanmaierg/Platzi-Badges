@@ -9,7 +9,7 @@ export class BadgesList extends Component {
                     <ul className="list-unstyled list-group">
                         {this.props.data.map((badge) => {
                             return (
-                                <BadgeItem badge={badge} />
+                                <BadgeItem key={badge.id} badge={badge} />
                             )
                         })}
                     </ul>
