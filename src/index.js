@@ -7,5 +7,6 @@ import './index.css';
 // Import JS libs
 import 'bootstrap/dist/css/bootstrap.css';
 import BadgeNew from './pages/BadgeNew';
+import Badges from './pages/Badges';
 
-ReactDOM.render(<BadgeNew />, document.getElementById('root'));
+ReactDOM.render(<Badges/>, document.getElementById('root'));
