@@ -12,7 +12,7 @@ export const NotFound = () => {
                 <div className="container NotFound__content-text">
                     <h3 className="fs-1 font-weight-bold">Upps!</h3>
                     <p className=" fs-5 font-weight-light">Are you lost?</p>
-                    <Link to="/" className="btn btn-primary">Return</Link>
+                    <Link to="/" className="btn btn-primary w-50">Return</Link>
                 </div>
             </div>
         </div>

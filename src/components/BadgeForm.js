@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-
+import './styles/BadgeForm.css';
 export class BadgeForm extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container BadgeForm__container">
                 <h1>New Attendant</h1>
                 <form action="">
                     <div className="form-group">

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Navbar from '../components/Navbar';
 import Badge from '../components/Badge';
-import Logo from '../images/badge-header.svg';
+import logoConf from '../images/logoConf.svg';
 import './styles/BadgeNew.css';
 import BadgeForm from '../components/BadgeForm';
 class BadgeNew extends React.Component {
@@ -30,17 +30,11 @@ class BadgeNew extends React.Component {
     return (
       <div>
         <div className="BadgeNew__hero">
-          <img className="img-fluid" src={Logo} alt="Logo"></img>
+          <img className="img-fluid" src={logoConf} alt="Logo"></img>
         </div>
         <div className="container BadgeNew__container">
-          <div className="row">
-            <div className="col-6">
               <Badge firstName={this.state.form.firstName} lastName={this.state.form.lastName} email={this.state.form.email} jobTitle={this.state.form.jobTitle} twitter={this.state.form.twitter}></Badge>
-            </div>
-            <div className="col-6">
               <BadgeForm onChange={this.handleChange} formValues={this.state.form} />
-            </div>
-          </div>
         </div>
       </div>
     );

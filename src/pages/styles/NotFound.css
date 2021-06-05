@@ -55,6 +55,7 @@
             flex-direction: column;
             justify-content: center;
             max-height: 600px;
+            max-width: 95vw;
         }
         .NotFound__content-text {
             text-align: center;
