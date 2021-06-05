@@ -1,21 +1,24 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import BadgeNew from '../pages/BadgeNew';
 import Badges from '../pages/Badges';
+import { NotFound } from '../pages/NotFound';
 import Layout from './Layout';
 
-export const App = () => {
+const App = () => {
     return (
-            <BrowserRouter>
+        <BrowserRouter>
             <Layout>
                 <Switch>
-                    <Route  exact path="/badges" component={Badges}></Route>
+                    <Route exact path="/badges" component={Badges}></Route>
                     <Route exact path="/badges/new" component={BadgeNew}></Route>
+                    <Route exact path="/404" component={NotFound}/>
+                    <Redirect from="*" to="/404"/>
+                    <Route component={NotFound} />
                 </Switch>
             </Layout>
-            </BrowserRouter>
+        </BrowserRouter>
     )
 }
-
 
 export default App;

@@ -32,7 +32,7 @@ class BadgeNew extends React.Component {
         <div className="BadgeNew__hero">
           <img className="img-fluid" src={Logo} alt="Logo"></img>
         </div>
-        <div className="container">
+        <div className="container BadgeNew__container">
           <div className="row">
             <div className="col-6">
               <Badge firstName={this.state.form.firstName} lastName={this.state.form.lastName} email={this.state.form.email} jobTitle={this.state.form.jobTitle} twitter={this.state.form.twitter}></Badge>
