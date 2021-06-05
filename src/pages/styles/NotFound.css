@@ -5,14 +5,17 @@
         background-repeat: no-repeat;
         background-position: center center;
         position: fixed;
+        top: 0;
         width: 100%;
     }
     
     .NotFound__content {
         display: flex;
         align-items: center;
-        max-width: 75vw;
+        max-width: 65vw;
         margin: auto;
+        margin: auto;
+        height: auto;
     }
     
     .NotFound__content-text {
@@ -22,7 +25,20 @@
         flex-direction: column;
         height: auto;
         align-items: flex-start;
+        flex: 1;
+        width: 100%;
     }
+    
+    .NotFound__content-img {
+        flex: 3;
+        width: 100%;
+    }
+    
+    .NotFound__content-img img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
     
     .NotFound__content-text h3 {
         font-family: 'Anton', sans-serif;
@@ -40,7 +56,7 @@
             justify-content: center;
             max-height: 600px;
         }
-        .NotFound__content-text{
+        .NotFound__content-text {
             text-align: center;
             align-items: center;
         }

@@ -11,8 +11,8 @@ export const NotFound = () => {
                 </div>
                 <div className="container NotFound__content-text">
                     <h3 className="fs-1 font-weight-bold">Upps!</h3>
-                    <p className=" fs-5 font-weight-light">Parece que estás perdido...</p>
-                    <Link to="/" className="btn btn-primary">Regresar</Link>
+                    <p className=" fs-5 font-weight-light">Are you lost?</p>
+                    <Link to="/" className="btn btn-primary">Return</Link>
                 </div>
             </div>
         </div>

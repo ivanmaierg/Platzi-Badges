@@ -1,0 +1,82 @@
+    .Home__container {
+        background: url('../../images/stars.svg'), #1B1B25;
+        min-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+    }
+    
+    .Home__content {
+        display: flex;
+        align-items: center;
+        max-width: 65vw;
+        margin: auto;
+        height: auto;
+    }
+    
+    .Home__content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 100%;
+        flex: 1;
+        color: white;
+        margin-right: 5rem;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .content__text-img {
+        margin: 2rem auto;
+    }
+    
+    .content__text-img img {
+        object-fit: cover;
+    }
+    
+    .Home__content-text h3 {
+        font-family: 'Anton', sans-serif;
+        background-color: #1B1B25;
+    }
+    
+    .Home__content-text p {
+        color: rgb(201, 201, 201);
+        font-family: 'Lato', sans-serif;
+        background-color: #1B1B25;
+    }
+    
+    .Home__content-text a {
+        align-self: center;
+        min-width: 150px;
+        margin-top: 3rem;
+    }
+    
+    .Home__content-img {
+        flex: 3;
+        height: auto;
+        width: 100%;
+    }
+    
+    .Home__content-img img {
+        object-fit: contain;
+    }
+    
+    @media (max-width: 1280px) {
+        .Home__content {
+            flex-direction: column-reverse;
+            justify-content: center;
+            max-height: 570px;
+            max-width: 500px;
+            min-width: 300px;
+        }
+        .Home__content-text {
+            text-align: center;
+            margin: 0 0 3rem 0;
+            text-align: center;
+            align-items: center;
+        }
+    }
