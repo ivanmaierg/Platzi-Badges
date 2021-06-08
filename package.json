@@ -2,35 +2,39 @@
   "name": "react",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "npm-run-all -p client server",
+    "client": "react-scripts start",
+    "server": "json-server --port 3001 --watch server/db.json",
+    "seed": "node server/seed.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "all": "^0.0.0",
     "bootstrap": "^5.0.1",
     "jquery": "^3.6.0",
+    "md5": "^2.3.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-router-dom": "4.3.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "react-router-dom": "4.3.1",
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "faker": "^4.1.0",
+    "json-server": "^0.14.2",
+    "npm-run-all": "^4.1.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
