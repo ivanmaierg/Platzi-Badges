@@ -1,9 +1,12 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom';
 import confLogo from '../images/logoConf.svg';
 import './styles/BadgeDetails.css';
 import Badge from './Badge';
-function BadgeDetails({ badge }) {
+import DeleteBadgeModal from './DeleteBadgeModal';
+
+function BadgeDetails({ badge, ...props }) {
     return (
         <div>
             <div className="BadgeDetails__hero">
@@ -27,7 +30,10 @@ function BadgeDetails({ badge }) {
                     <div className="col-6 d-flex flex-column align-items-start">
                         <h3>Actions:</h3>
                         <div className="mb-3 w-25"><Link to={`/badges/${badge.id}/edit`} type="button" className="btn btn-primary  w-100 m-auto">Edit</Link></div>
-                        <div className="w-25"><button type="button" className="btn btn-danger  w-100 m-auto">Delete</button></div>
+                        <div className="w-25">
+                            <button type="button" onClick={props.onOpenModal} className="btn btn-danger  w-100 m-auto">Delete</button>
+                            <DeleteBadgeModal isOpen={props.isOpen} onClose={props.onCloseModal} onDelete={props.onDelete}>Lorem ipsum</DeleteBadgeModal>
+                        </div>
                     </div>
                 </div>
             </div>

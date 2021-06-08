@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './styles/BadgeForm.css';
 import uploadIcon from '../images/uploadIcon.svg';
 export class BadgeForm extends Component {
-
     render() {
         return (
             <div className="BadgeForm__container d-flex justify-content-center flex-column">
