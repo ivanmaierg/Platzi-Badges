@@ -8,7 +8,6 @@ const simulateNetworkLatency = (min = 30, max = 1500) =>
 
 async function callApi(endpoint, options = {}) {
     await simulateNetworkLatency();
-
     options.headers = {
         'Content-Type': 'application/json',
         Accept: 'application/json',
