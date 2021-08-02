@@ -5,15 +5,13 @@
         background-repeat: no-repeat;
         background-position: center center;
         position: fixed;
-        top: 0;
         width: 100%;
-
     }
     
     .Home__content {
         display: flex;
         align-items: center;
-        max-width: 65vw;
+        max-width: 1260px;
         margin: auto;
         height: auto;
     }

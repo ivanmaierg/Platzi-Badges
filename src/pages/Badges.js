@@ -37,7 +37,7 @@ export class Badges extends Component {
             )
         }
         return (
-            <div>
+            <div className="">
                 <div className="Badges">
                     <div className="Badges__hero">
                         <div className="Badges__container">

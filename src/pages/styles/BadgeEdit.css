@@ -1,5 +1,4 @@
     .main {
-        position: fixed;
         width: 100%;
         height: auto;
     }
@@ -18,7 +17,6 @@
     
     .BadgeEdit__container {
         position: relative;
-        border: red 1px solid;
         transform: translateY(-40%);
         max-width: 1000px;
         height: 700px;
